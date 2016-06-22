@@ -1,0 +1,43 @@
+.header .active {
+  font-weight: 900; }
+
+.image-detail .panel-body {
+  text-align: center; }
+
+.image-detail img, .image-detail video {
+  max-width: 100%; }
+
+.Image-Preview {
+  display: inline-block;
+  position: relative; }
+  .Image-Preview .inset {
+    position: absolute;
+    bottom: 5px;
+    left: 0px;
+    width: 100%;
+    background-color: white;
+    text-align: center;
+    opacity: .7; }
+  .Image-Preview .glyphicon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 50px;
+    opacity: .5;
+    color: white; }
+  .Image-Preview img {
+    width: 200px;
+    height: 200px;
+    display: inline-block; }
+  .Image-Preview video {
+    height: 200px;
+    width: 200px;
+    vertical-align: middle;
+    background-color: black; }
+
+.black {
+  color: black; }
+
+.image {
+  text-align: center; }
