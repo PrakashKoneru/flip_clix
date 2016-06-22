@@ -2,8 +2,6 @@ var React= require('react');
 var Router= require('react-router');
 var Link=Router.Link;
 
-
-
 module.exports= React.createClass({
     getInitialState : function(){
       return {
@@ -52,6 +50,5 @@ module.exports= React.createClass({
             upvotes : {this.props.ups}
         </div>
     }
-
 });
 
