@@ -24,7 +24,7 @@ module.exports= React.createClass({
 
     },
     renderTopics : function(){
-       return this.state.topics.slice(0,4).map(function (topic) {
+       return this.state.topics.slice(8,12).map(function (topic) {
            return <Link to={"topics/" + topic.id} className="list-group-item" key={topic.id}>
                <h4>{topic.name}</h4>
                <p>{topic.description}</p>
@@ -33,6 +33,7 @@ module.exports= React.createClass({
 
     },
     onChange : function (event,topics) {
+        console.log(topics);
         this.setState({topics: topics});
     }
 });

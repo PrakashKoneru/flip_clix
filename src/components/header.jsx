@@ -31,10 +31,10 @@ module.exports= React.createClass({
        </nav>
    },
     renderTopics : function(){
-        return this.state.topics.slice(0,4).map(function(topic){
+        return this.state.topics.slice(8,12).map(function(topic){
             return <li key={topic.id}>
                 <Link activeClassName="active" to={"topics/" + topic.id} key={topic.id}>
-                    <h4>{topic.name}</h4>
+                    <h5>{topic.name}</h5>
                 </Link>
             </li>
 

@@ -17,8 +17,6 @@ module.exports= React.createClass({
           image: null,
           comment:null
       }
-
-
     },
     componentWillMount : function(){
       Actions.getImage(this.props.params.id);
@@ -50,8 +48,7 @@ module.exports= React.createClass({
       if(!this.state.comment){
           return null
       }
-
-        return <CommentBox comments={this.state.comment} />
+      return <CommentBox comments={this.state.comment} />
     },
     renderImage:function(){
          if (this.state.image.animated){
